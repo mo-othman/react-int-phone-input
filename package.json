@@ -7,7 +7,7 @@
     "build": "webpack"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/@mo-othman"
+    "registry":"https://npm.pkg.github.com"
   },
   "author": "Mahmoud Othman",
   "license": "ISC",
