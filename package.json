@@ -1,7 +1,7 @@
 {
   "name": "@mmothman/react-int-phone-input",
   "version": "0.0.1",
-  "description": "Int phone number input for react with UX consideration.",
+  "description": "International phone number input for react with UX consideration.",
   "main": "./build/index.js",
   "scripts": {
     "build": "webpack"
@@ -27,6 +27,14 @@
     "react-country-flag": "^2.3.0",
     "libphonenumber-js": "^1.9.21"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mo-othman/react-int-phone-input.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mo-othman/react-int-phone-input/issues"
+  },
+  "homepage": "https://github.com/mo-othman/react-int-phone-input#readme",
   "keywords": [
     "react",
     "tel",
@@ -38,4 +46,3 @@
     "phonenumber"
   ]
 }
-
