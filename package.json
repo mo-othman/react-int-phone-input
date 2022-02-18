@@ -6,6 +6,9 @@
   "scripts": {
     "build": "webpack"
   },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/@YOUR_USERNAME"
+  },
   "author": "Mahmoud Othman",
   "license": "ISC",
   "devDependencies": {
