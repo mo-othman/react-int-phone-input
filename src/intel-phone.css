@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.center-flex {
+  display: flex;
+  align-items: center;
+}
+
+.phone-input-container {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  border: 1px solid #767676;
+  border-radius: 3px;
+  padding: 0 0 0 10px;
+}
+
+.masked-input-container {
+  margin-left: 5px;
+}
+
+.countries_list {
+  max-height: 300px;
+  border: 1px solid rgb(155, 154, 154);
+  text-align: left;
+  overflow: auto;
+  position: absolute;
+  left: -1px;
+  top: 96%;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  min-width: 300px;
+}
+
+.countries_list__container {
+  padding: 5px 10px;
+}
+
+.countries_list__country {
+  cursor: pointer;
+}
+.countries_list__filter {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid rgb(155, 154, 154);
+  padding: 0 10px 3px;
+  font-size: 12px;
+}
+.countries_list__filter:focus {
+  outline: none;
+}
+
+.countries_list__country--label {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 2px;
+
+}
+
+.countries_list__country--code {
+  font-size: 12px;
+  margin-left: 3px;
+  opacity: 0.7;
+}
+
+.countries_list__country--flag {
+  font-size: 1.5em !important ;
+  line-height: 1em !important;
+}
+
+.position-relative {
+  position: relative;
+  min-width: 120px;
+  cursor: pointer;
+}
+
+.shell {
+  position: relative;
+  line-height: 1;
+}
+
+.shell span {
+  position: absolute;
+  left: 3px;
+  top: 1px;
+  color: rgb(124, 124, 124);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.shell span i {
+  font-style: normal;
+  /* any of these 3 will work */
+  color: transparent;
+  opacity: 0;
+  visibility: hidden;
+}
+input.masked {
+  border: none;
+}
+
+input.masked,
+.shell span {
+  font-size: 14px;
+  padding: 2px 5px;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+input.masked:focus {
+  outline: none;
+  border: none;
+}
+
+li {
+  line-height: 2;
+}
+:invalid {
+  outline: 1px solid red;
+}

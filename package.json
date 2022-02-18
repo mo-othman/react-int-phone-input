@@ -1,0 +1,38 @@
+{
+  "name": "react-int-phone-input",
+  "version": "0.0.1",
+  "description": "Int phone number input for react with UX consideration.",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "author": "Mahmoud Othman",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.3.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-country-flag": "^2.3.0",
+    "libphonenumber-js": "^1.9.21"
+  },
+  "keywords": [
+    "react",
+    "tel",
+    "phone-number-react",
+    "phone-input",
+    "telephone",
+    "intl-tel-input",
+    "international-telephone-input",
+    "phonenumber"
+  ]
+}
+
