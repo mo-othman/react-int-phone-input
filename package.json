@@ -1,11 +1,12 @@
 {
   "name": "react-int-phone-input",
+  "homepage": "https://mo-othman.github.io/react-int-phone-input",
   "version": "0.0.2",
   "description": "International phone number input for react with UX consideration.",
   "main": "./build/index.js",
   "scripts": {
     "build": "webpack",
-    "test": ""
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
