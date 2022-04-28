@@ -4,7 +4,8 @@
   "description": "International phone number input for react with UX consideration.",
   "main": "./build/index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "test": ""
   },
   "repository": {
     "type": "git",
