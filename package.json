@@ -1,13 +1,23 @@
 {
   "name": "@mo-othman/react-int-phone-input",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "International phone number input for react with UX consideration.",
   "main": "./build/index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mo-othman/react-int-phone-input.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mo-othman/react-int-phone-input/issues"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "access": "public",
+    "branches": [
+      "master"
+    ]
   },
   "author": "Mahmoud Othman",
   "license": "ISC",
