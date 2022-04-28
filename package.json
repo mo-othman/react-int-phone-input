@@ -1,5 +1,5 @@
 {
-  "name": "@mmothman/react-int-phone-input",
+  "name": "react-int-phone-input",
   "version": "0.0.1",
   "description": "International phone number input for react with UX consideration.",
   "main": "./build/index.js",
