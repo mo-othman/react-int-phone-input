@@ -1,5 +1,6 @@
 # React-Int-Phone-Input
-React international phone number input with taking UX in consideration
+A lightweight React international phone number input with taking UX in consideration
+![Alt text](./sample.png?raw=true "Screenshot of an example")
 
 
 ## Installation
@@ -7,17 +8,21 @@ React international phone number input with taking UX in consideration
 npm install react-int-phone-input --save
 ```
 
-# Warning 
-This is a beta version and not for prod yet
-
-
 
 ## Usage
 ```jsx
-import PhoneNumberInput from 'react-int-phone-input'
+import React, { useState } from 'react';
+import PhoneNumberInput from 'react-int-phone-input';
 
-<PhoneInput
-  value={value} 
-  onChange={setValue}
-/>
+const App = () => {
+    const [value, setValue] = useState();
+
+   return (
+       <PhoneInput
+        value={value}
+        onChange={setValue}
+    />
+   )
+}
+
 ```
