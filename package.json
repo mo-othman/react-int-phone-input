@@ -1,6 +1,6 @@
 {
   "name": "react-int-phone-input",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "International phone number input for react with UX consideration.",
   "main": "./build/index.js",
   "scripts": {

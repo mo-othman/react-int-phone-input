@@ -19,17 +19,25 @@ html {
   align-items: center;
   border: 1px solid #767676;
   border-radius: 3px;
-  padding: 0 0 0 10px;
 }
 
 .masked-input-container {
-  margin-left: 5px;
 }
+.selected-country-holder {
+  padding: 0 5px 0 10px;
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-right: 1px solid #cacaca;
+}
+
+.selected-country-holder .countries_list__country--flag {
+  margin-right: 3px;
+}
+
 .countries_list {
-  max-height: 300px;
   border: 1px solid rgb(155, 154, 154);
   text-align: left;
-  overflow: auto;
   position: absolute;
   left: -1px;
   top: 96%;
@@ -42,6 +50,24 @@ html {
 
 .countries_list__container {
   padding: 5px 10px;
+  height: 280px;
+  overflow: auto;
+}
+
+.arrow-icon {
+  display: inline;
+  height: 9px;
+  line-height: 1px;
+}
+
+.placeholder-mask {
+  padding: 1px 0;
+  display: inline-block;
+}
+
+.country-code-holder {
+  padding: 2px 0 2px 5px;
+  font-size: 14px;
 }
 
 .countries_list__country {
@@ -63,6 +89,7 @@ html {
   font-size: 12px;
   font-weight: 500;
   margin-left: 2px;
+
 }
 
 .countries_list__country--code {

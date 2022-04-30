@@ -9,25 +9,25 @@ const MaskedInput = (props) => {
 
   const handleCurrentValue = (e) => {
     var isCharsetPresent = e.target.getAttribute("data-charset"),
-      maskedNumber = "XMDY",
-      maskedLetter = "_",
-      placeholder =
-        isCharsetPresent || e.target.getAttribute("data-placeholder"),
-      value = e.target.value,
-      l = placeholder.length,
-      newValue = "",
-      i,
-      j,
-      isInt,
-      isLetter,
-      strippedValue,
-      matchesNumber,
-      matchesLetter;
+        maskedNumber = "XMDY",
+        maskedLetter = "_",
+        placeholder =
+            isCharsetPresent || e.target.getAttribute("data-placeholder"),
+        value = e.target.value,
+        l = placeholder.length,
+        newValue = "",
+        i,
+        j,
+        isInt,
+        isLetter,
+        strippedValue,
+        matchesNumber,
+        matchesLetter;
 
     // strip special characters
     strippedValue = isCharsetPresent
-      ? value.replace(/\W/g, "")
-      : value.replace(/\D/g, "");
+        ? value.replace(/\W/g, "")
+        : value.replace(/\D/g, "");
 
     for (i = 0, j = 0; i < l; i++) {
       isInt = !isNaN(parseInt(strippedValue[j]));
@@ -35,14 +35,14 @@ const MaskedInput = (props) => {
       matchesNumber = maskedNumber.indexOf(placeholder[i]) >= 0;
       matchesLetter = maskedLetter.indexOf(placeholder[i]) >= 0;
       if (
-        (matchesNumber && isInt) ||
-        (isCharsetPresent && matchesLetter && isLetter)
+          (matchesNumber && isInt) ||
+          (isCharsetPresent && matchesLetter && isLetter)
       ) {
         newValue += strippedValue[j++];
       } else if (
-        (!isCharsetPresent && !isInt && matchesNumber) ||
-        (isCharsetPresent &&
-          ((matchesLetter && !isLetter) || (matchesNumber && !isInt)))
+          (!isCharsetPresent && !isInt && matchesNumber) ||
+          (isCharsetPresent &&
+              ((matchesLetter && !isLetter) || (matchesNumber && !isInt)))
       ) {
         return newValue;
       } else {
@@ -64,12 +64,12 @@ const MaskedInput = (props) => {
 
   const setValueOfMask = (e) => {
     var value = e.target.value,
-      placeholder = e.target.getAttribute("data-placeholder");
+        placeholder = e.target.getAttribute("data-placeholder");
 
     if (value === "") {
       return props.placeholderM;
     }
-    return "<i>" + value + "</i>" + placeholder.substr(value.length);
+    return "<i>" + value + "</i>" + `<div class='placeholder-mask'>${placeholder.substr(value.length)}</div>`
   };
 
   const value = props.value || "";
@@ -86,23 +86,23 @@ const MaskedInput = (props) => {
   }, [props.placeholder]);
 
   return (
-    <span className="shell">
+      <span className="shell">
       <span aria-hidden="true" id={props.id + "Mask"}>
         <i>{value}</i>
         {props.placeholderM}
       </span>
       <input
-        ref={inputEl}
-        id={props.id}
-        onChange={handleChange}
-        name={props.id}
-        type={props.type}
-        className={props.className}
-        data-placeholder={props.placeholder}
-        aria-required={props.required}
-        data-charset={props.dataCharset}
-        required={props.required}
-        title={props.title}
+          ref={inputEl}
+          id={props.id}
+          onChange={handleChange}
+          name={props.id}
+          type={props.type}
+          className={props.className}
+          data-placeholder={props.placeholder}
+          aria-required={props.required}
+          data-charset={props.dataCharset}
+          required={props.required}
+          title={props.title}
       />
     </span>
   );
