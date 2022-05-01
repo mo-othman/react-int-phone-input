@@ -14,7 +14,7 @@ const MaskedInput = (props) => {
         placeholder =
             isCharsetPresent || e.target.getAttribute("data-placeholder"),
         value = e.target.value,
-        l = placeholder.length || 0,
+        l = placeholder? placeholder.length : 0,
         newValue = "",
         i,
         j,
@@ -69,7 +69,7 @@ const MaskedInput = (props) => {
     if (value === "") {
       return props.placeholderM;
     }
-    return "<i>" + value + "</i>" + `<div class='placeholder-mask'>${placeholder.substr(value.length || 0)}</div>`
+    return "<i>" + value + "</i>" + `<div class='placeholder-mask'>${placeholder.substr(value? value.length : 0)}</div>`
   };
 
   const value = props.value || "";
